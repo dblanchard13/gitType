@@ -6,7 +6,7 @@
   <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="lib/angular-material/angular-material.min.css" rel="stylesheet">
   <link rel="stylesheet" href="lib/nvd3/build/nv.d3.css">
-  <link href="app/styles/style.css" rel="stylesheet">
+  <!-- <link href="client/styles/style.css" rel="stylesheet"> -->
   <style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style>
 </head>
 <body>
@@ -30,6 +30,11 @@
 
 <!-- // JS libraries -->
   <script src='app.js'></script>
+  <script src="controllers/main.js"></script>
+  <script src="services/auth.js"></script>
+  <script src="services/barChart.js"></script>
+  <script src="services/dataFormatter.js"></script>
+  <script src="services/pieChart.js"></script>
 
   <script>
     $('body').append(

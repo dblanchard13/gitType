@@ -1,5 +1,5 @@
 var express = require('express');
-var bodyparser = require('bodyParser');
+var bodyparser = require('body-parser');
 var morgan = require('morgan');
 
 module.exports = function(app) {

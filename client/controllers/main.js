@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('gitType.main', ['ngMaterial', 'ngMessages'])
+  angular.module('gitType.main', ['ngMaterial'])
   .controller('MainController', MainController)
   //defines the colors
   .config( function($mdThemingProvider){
@@ -9,9 +9,9 @@
     .primaryPalette('light-blue')
   });
 
-  HomeController.$inject = ['$scope', 'Auth', '$q', '$timeout', '$http', '$resource', 'barChart'];
+  MainController.$inject = ['$scope', 'Auth', '$q', '$timeout', '$http', '$resource', 'barChart'];
 
-  function MainController($scope, 'Auth', '$q', '$timeout', '$http', '$resource', 'barChart'){
+  function MainController($scope, Auth, $q, $timeout, $http, $resource, barChart){
     $scope.tableFuncCalled = false;
     $scope.graphItCalled = false;
     $scope.contribData = [];
