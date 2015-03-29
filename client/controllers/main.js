@@ -12,7 +12,9 @@
   HomeController.$inject = ['$scope', 'Auth', '$q', '$timeout', '$http', '$resource', 'barChart'];
 
   function MainController($scope, 'Auth', '$q', '$timeout', '$http', '$resource', 'barChart'){
-
+    $scope.tableFuncCalled = false;
+    $scope.graphItCalled = false;
+    $scope.contribData = [];
 
     $scope.login = function(){
       Auth.login()
@@ -39,7 +41,7 @@
 
 
     $scope.getUserContributionData = function(username){
-      var username = $scope.gitName;
+      var username = username || $scope.gitName;
       if($scope.gitName === undefined){ return; }
 
 
@@ -59,10 +61,10 @@
                 allEventData.push(singleEvent);
               });
               $scope.gitName = "";
-              $scope.totalEvents.push(dateFormat.processContributionData(allEventData, username));
+              $scope.contribData.push(dateFormat.processContributionData(allEventData, username));
               // if contribChart has already been rendered, re-render it with new data
-              if($scope.contribChartCalled){ 
-                $scope.makeBarChart(); 
+              if($scope.graphItCalled){ 
+                $scope.graphIt(); 
               }
               return;
             }
