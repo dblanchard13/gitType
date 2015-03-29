@@ -1,4 +1,7 @@
 node_modules
-bower_components
-client/lib/
-tester/
+public
+.tmp
+.idea
+client/bower_components
+dist
+/server/config/local.env.js
