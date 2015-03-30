@@ -1,68 +1,47 @@
 {
-	"name": "gittype",
-	"description": "Awesome",
-	"version": "0.0.1",
-	"author": "David Blanchard",
-	"engines": {
-		"node": "0.10.x",
-		"npm": "1.4.x"
-	},
-	"scripts": {
-		"start": "grunt",
-		"test": "grunt test",
-		"postinstall": "bower install --config.interactive=false"
-	},
-	"dependencies": {
-		"express": "~4.10.1",
-		"express-session": "~1.9.1",
-		"body-parser": "~1.9.0",
-		"cookie-parser": "~1.3.2",
-		"compression": "~1.2.0",
-		"method-override": "~2.3.0",
-		"morgan": "~1.4.1",
-		"connect-mongo": "~0.4.1",
-		"connect-flash": "~0.1.1",
-		"helmet": "~0.5.0",
-		"consolidate": "~0.10.0",
-		"swig": "~1.4.1",
-		"mongoose": "~3.8.8",
-		"passport": "~0.2.0",
-		"passport-local": "~1.0.0",
-		"passport-facebook": "~1.0.2",
-		"passport-twitter": "~1.0.2",
-		"passport-linkedin": "~0.1.3",
-		"passport-google-oauth": "~0.1.5",
-		"passport-github": "~0.1.5",
-		"lodash": "~2.4.1",
-		"forever": "~0.11.0",
-		"bower": "~1.3.8",
-		"grunt-cli": "~0.1.13",
-		"glob": "~4.0.5",
-		"async": "~0.9.0",
-		"nodemailer": "~1.3.0",
-		"chalk": "~0.5"
-	},
-	"devDependencies": {
-		"supertest": "~0.14.0",
-		"should": "~4.1.0",
-		"grunt-env": "~0.4.1",
-		"grunt-node-inspector": "~0.1.3",
-		"grunt-contrib-watch": "~0.6.1",
-		"grunt-contrib-jshint": "~0.10.0",
-		"grunt-contrib-csslint": "^0.3.1",
-		"grunt-ng-annotate": "~0.4.0",
-		"grunt-contrib-uglify": "~0.6.0",
-		"grunt-contrib-cssmin": "~0.10.0",
-		"grunt-nodemon": "~0.3.0",
-		"grunt-concurrent": "~1.0.0",
-		"grunt-mocha-test": "~0.12.1",
-		"grunt-karma": "~0.9.0",
-		"load-grunt-tasks": "~1.0.0",
-		"karma": "~0.12.0",
-		"karma-jasmine": "~0.2.1",
-		"karma-coverage": "~0.2.0",
-		"karma-chrome-launcher": "~0.1.2",
-		"karma-firefox-launcher": "~0.1.3",
-		"karma-phantomjs-launcher": "~0.1.2"
-	}
+  "name": "GitInsights",
+  "version": "0.0.0",
+  "description": "Github User Insights",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.3.14",
+    "angular-mocks": "^1.3.14",
+    "body-parser": "^1.12.0",
+    "bower": "^1.3.12",
+    "express": "^4.12.2",
+    "firebase": "^2.2.3",
+    "morgan": "^1.5.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-jshint": "^1.9.2",
+    "gulp-nodemon": "^1.0.5",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-uglify": "^1.1.0",
+    "karma": "^0.12.31",
+    "karma-chai": "^0.1.0",
+    "karma-mocha": "^0.1.10",
+    "karma-nyan-reporter": "0.0.60",
+    "karma-phantomjs-launcher": "^0.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "postinstall": "bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GitInsights/GitInsights"
+  },
+  "keywords": [
+    "Github",
+    "Insights"
+  ],
+  "author": "John Zhang, Seunghoon Ko, Eli Xian, Kate Jefferson, Sean Kim, John Games, David Blanchard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GitInsights/GitInsights/issues"
+  },
+  "homepage": "https://github.com/GitInsights/GitInsights"
 }
